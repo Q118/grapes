@@ -14,7 +14,7 @@ function App() {
 
   //state to store the selected activity box
   const [ activities, setActivities ] = useState(sampleActivities);
-
+  const [ selectedActivityId, setSelectedActivityId] = useState(sampleActivities);
 
   return (
     <>
