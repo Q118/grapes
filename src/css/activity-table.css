@@ -1,0 +1,6 @@
+.activity--table__container {
+
+    display: grid;
+    place-items: center;
+    margin: 20px;
+}
