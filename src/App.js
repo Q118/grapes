@@ -42,9 +42,13 @@ function App() {
     return activity.name;
   });
  
+  const meanings = sampleActivities.map(activity => {
+    return activity.meaning;
+  });
 
   const ActivityContextValue = {
-    mappedActivities
+    mappedActivities,
+    meanings
   }
 
   return (

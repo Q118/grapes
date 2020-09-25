@@ -1,30 +1,25 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { ActivityContext } from "../App";
+
 
 export default function ActivitySquare(props) {
     //set up the initial state to hold name and activity
 
-    const { mappedActivities } = props;
-
+    const { meanings } = useContext(ActivityContext);
 
     return (
         <>
         <div>
-            {/* <h3>{...mappedActivities}</h3> */}
+
         </div>
             <textarea
                 type="activity"
                 name="activity"
                 className="activity__input"
-                // placeholder= {props.meaning}
+                placeholder= {meanings[0]} 
             />
         </>
     )
 }
 
-
-//need to map in the "start" for each
-
-{/* <div> {activities.map((recipe) => {
-    return <li key={activity.id} {...activity} />;
-})}           
-       </div>  */}
+// corelated with proper selectedID

@@ -10,39 +10,38 @@ import { ActivityContext } from "../App";
 // each box should have a text area to be filled
 
 export default function ActivityTable(props) {
-    
-    const { mappedActivities } = useContext(ActivityContext);
-    
-    const { id, name, meaning, start, suggestions } = props;
+	const { mappedActivities, meanings } = useContext(ActivityContext);
+
+	// const { id, name, meaning, start, suggestions } = props;
 
 	return (
 		<div>
 			<Container className="activity--table__container">
 				<Row>
 					<Col className="box box--g">
-    <h3>{mappedActivities[0]}</h3>
+						<h3>{mappedActivities[0]}</h3>
 						<ActivitySquare />
 					</Col>
 					<Col className="box box--r">
-						<h3>R</h3>
-						<ActivitySquare />
+						<h3>{mappedActivities[1]}</h3> 
+                        <ActivitySquare />
 					</Col>
 					<Col className="box box--a">
-						<h3>A</h3>
+						<h3>{mappedActivities[2]}</h3>
 						<ActivitySquare />
 					</Col>
 				</Row>
 				<Row>
 					<Col className="box box--p">
-						<h3>P</h3>
+						<h3>{mappedActivities[3]}</h3>
 						<ActivitySquare />
 					</Col>
 					<Col className="box box--e">
-						<h3>E</h3>
+						<h3>{mappedActivities[4]}</h3>
 						<ActivitySquare />
 					</Col>
 					<Col className="box box--s">
-						<h3>S</h3>
+						<h3>{mappedActivities[5]}</h3>
 						<ActivitySquare />
 					</Col>
 				</Row>
