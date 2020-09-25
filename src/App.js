@@ -39,6 +39,10 @@ function App() {
 	}, [activities]);
 
 
+	function handleActivitySelect(id) {
+		setSelectedActivityId(id);
+	}
+
   const mappedActivities =  sampleActivities.map(activity => {
     return activity.name;
   });
@@ -49,7 +53,8 @@ function App() {
 
   const ActivityContextValue = {
     mappedActivities,
-    meanings
+    meanings,
+    handleActivitySelect
   }
 
   return (
