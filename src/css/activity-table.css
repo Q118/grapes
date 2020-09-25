@@ -1,6 +1,7 @@
 .activity--table__container {
+    margin-top: 20px;
+}
 
-    display: grid;
-    place-items: center;
-    margin: 20px;
+.box {
+    max-width: min-content;
 }
