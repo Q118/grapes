@@ -1,0 +1,2 @@
+(this.webpackJsonpgrapes=this.webpackJsonpgrapes||[]).push([[0],{3:function(e,a,t){e.exports=t(8)},8:function(e,a,t){"use strict";t.r(a);var n=t(0),r=t.n(n),s=t(2);var c=function(){return r.a.createElement("div",{className:"App"},r.a.createElement("header",{className:"App-header"},"Learn React"))};t.n(s).a.render(r.a.createElement(c,null),document.getElementById("root"))}},[[3,1,2]]]);
+//# sourceMappingURL=main.1dd5b9bd.chunk.js.map

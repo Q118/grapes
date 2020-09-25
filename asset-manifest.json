@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/grapes/static/js/main.1dd5b9bd.chunk.js",
+    "main.js.map": "/grapes/static/js/main.1dd5b9bd.chunk.js.map",
+    "runtime-main.js": "/grapes/static/js/runtime-main.e06b9bed.js",
+    "runtime-main.js.map": "/grapes/static/js/runtime-main.e06b9bed.js.map",
+    "static/js/2.f83b5878.chunk.js": "/grapes/static/js/2.f83b5878.chunk.js",
+    "static/js/2.f83b5878.chunk.js.map": "/grapes/static/js/2.f83b5878.chunk.js.map",
+    "index.html": "/grapes/index.html",
+    "precache-manifest.332359e9394705ee6719094499cfbb9e.js": "/grapes/precache-manifest.332359e9394705ee6719094499cfbb9e.js",
+    "service-worker.js": "/grapes/service-worker.js",
+    "static/js/2.f83b5878.chunk.js.LICENSE.txt": "/grapes/static/js/2.f83b5878.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e06b9bed.js",
+    "static/js/2.f83b5878.chunk.js",
+    "static/js/main.1dd5b9bd.chunk.js"
+  ]
+}
