@@ -3,13 +3,13 @@ import React from 'react'
 export default function ActivitySquare(props) {
     //set up the initial state to hold name and activity
 
-    const { id, name, meaning, start } = props;
+    const { mappedActivities } = props;
 
 
     return (
         <>
         <div>
-            <h3>{name}</h3>
+            {/* <h3>{...mappedActivities}</h3> */}
         </div>
             <textarea
                 type="activity"
