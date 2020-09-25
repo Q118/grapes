@@ -20,7 +20,7 @@ export default function ActivityTable(props) {
 				<Row>
 					<Col className="box box--g">
 						<h3>{mappedActivities[0]}</h3>
-						<ActivitySquare />
+						<ActivitySquare  />
 					</Col>
 					<Col className="box box--r">
 						<h3>{mappedActivities[1]}</h3> 

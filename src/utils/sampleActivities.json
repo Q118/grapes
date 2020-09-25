@@ -80,6 +80,170 @@
             }
 
         ]
+    },
+    {
+        "id": 3,
+		"name": "A",
+        "meaning": "Gentle With Self",
+        "start": "Pick a simple activity that is kind to yourself. Think about yourself with pride, acceptance, and forgiveness.",
+        "suggestions": [
+            {
+                "id": 1,
+                "name": "Talk more kindly to self"
+            },
+            {
+                "id": 2,
+                "name": "Practice positive affirmations"
+            },
+            {
+                "id": 3,
+                "name": "Reflect on something you’re thankful for"
+            },
+            {
+                "id": 4,
+                "name": "Drink enough water"
+            },
+            {
+                "id": 5,
+                "name": "Forgive yourself for something"
+            },
+            {
+                "id": 6,
+                "name": "Think about your dreams"
+            },
+            {
+                "id": 7,
+                "name": "Communicate needs to a loved one"
+            },
+            {
+                "id": 8,
+                "name": "Say no to an inconvenient request"
+            }
+
+        ]
+    },
+    {
+        "id": 4,
+		"name": "P",
+        "meaning": "Gentle With Self",
+        "start": "Pick a simple activity that is kind to yourself. Think about yourself with pride, acceptance, and forgiveness.",
+        "suggestions": [
+            {
+                "id": 1,
+                "name": "Talk more kindly to self"
+            },
+            {
+                "id": 2,
+                "name": "Practice positive affirmations"
+            },
+            {
+                "id": 3,
+                "name": "Reflect on something you’re thankful for"
+            },
+            {
+                "id": 4,
+                "name": "Drink enough water"
+            },
+            {
+                "id": 5,
+                "name": "Forgive yourself for something"
+            },
+            {
+                "id": 6,
+                "name": "Think about your dreams"
+            },
+            {
+                "id": 7,
+                "name": "Communicate needs to a loved one"
+            },
+            {
+                "id": 8,
+                "name": "Say no to an inconvenient request"
+            }
+
+        ]
+    },
+    {
+        "id": 5,
+		"name": "E",
+        "meaning": "Gentle With Self",
+        "start": "Pick a simple activity that is kind to yourself. Think about yourself with pride, acceptance, and forgiveness.",
+        "suggestions": [
+            {
+                "id": 1,
+                "name": "Talk more kindly to self"
+            },
+            {
+                "id": 2,
+                "name": "Practice positive affirmations"
+            },
+            {
+                "id": 3,
+                "name": "Reflect on something you’re thankful for"
+            },
+            {
+                "id": 4,
+                "name": "Drink enough water"
+            },
+            {
+                "id": 5,
+                "name": "Forgive yourself for something"
+            },
+            {
+                "id": 6,
+                "name": "Think about your dreams"
+            },
+            {
+                "id": 7,
+                "name": "Communicate needs to a loved one"
+            },
+            {
+                "id": 8,
+                "name": "Say no to an inconvenient request"
+            }
+
+        ]
+    },
+    {
+        "id": 6,
+		"name": "S",
+        "meaning": "Gentle With Self",
+        "start": "Pick a simple activity that is kind to yourself. Think about yourself with pride, acceptance, and forgiveness.",
+        "suggestions": [
+            {
+                "id": 1,
+                "name": "Talk more kindly to self"
+            },
+            {
+                "id": 2,
+                "name": "Practice positive affirmations"
+            },
+            {
+                "id": 3,
+                "name": "Reflect on something you’re thankful for"
+            },
+            {
+                "id": 4,
+                "name": "Drink enough water"
+            },
+            {
+                "id": 5,
+                "name": "Forgive yourself for something"
+            },
+            {
+                "id": 6,
+                "name": "Think about your dreams"
+            },
+            {
+                "id": 7,
+                "name": "Communicate needs to a loved one"
+            },
+            {
+                "id": 8,
+                "name": "Say no to an inconvenient request"
+            }
+
+        ]
     }
 
 
