@@ -6,7 +6,7 @@ import sampleActivities from './utils/sampleActivities.json';
 
 //export activitycontext
 
-const LOCAL_STORAGE_KEY = "cookingWithReact.recipes";
+const LOCAL_STORAGE_KEY = "reactGrapes.activities";
 
 
 
@@ -21,18 +21,28 @@ function App() {
 		(activity) => activity.id === selectedActivityId
   );
   
+  
   //on load
   useEffect(() => {
 		const activityJSON = localStorage.getItem(LOCAL_STORAGE_KEY);
 		//check if it exists yet
-		if (activityJSON != null) setActivities(JSON.parse(activityJSON));
-	}, []);
+    if (activityJSON != null) setActivities(JSON.parse(activityJSON));
+    console.log(sampleActivities)
+  }, []);
+  
+  useEffect(() => {
+		localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(activities));
+	}, [activities]);
 
+  const mappedActivities =  sampleActivities.map(activity => {
+    return activity.name;
+  });
+ 
   return (
     <>
-      <div>
+          <p>{mappedActivities}</p>
           <MainContainer />
-      </div>
+
     </>
   );
 }

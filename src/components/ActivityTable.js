@@ -14,7 +14,8 @@ export default function ActivityTable() {
 			<Container className="activity--table__container">
 				<Row>
                     <Col className="box box--g">
-                        <h3>G</h3>
+
+                       <h3>G</h3>
                         <ActivitySquare />
                     </Col>
 					<Col className="box box--r">
