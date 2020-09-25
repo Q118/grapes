@@ -9,9 +9,6 @@ export default function ActivitySquare(props) {
 
     return (
         <>
-        <div>
-
-        </div>
             <textarea
                 type="activity"
                 name="activity"

@@ -43,8 +43,8 @@
     {
         "id": 2,
 		"name": "R",
-        "meaning": "Gentle With Self",
-        "start": "Pick a simple activity that is kind to yourself. Think about yourself with pride, acceptance, and forgiveness.",
+        "meaning": "Relaxation",
+        "start": "Take time to relax and unwind from stress.",
         "suggestions": [
             {
                 "id": 1,
@@ -84,8 +84,8 @@
     {
         "id": 3,
 		"name": "A",
-        "meaning": "Gentle With Self",
-        "start": "Pick a simple activity that is kind to yourself. Think about yourself with pride, acceptance, and forgiveness.",
+        "meaning": "Accomplishment",
+        "start": "Commit to completing at least one task of any size.",
         "suggestions": [
             {
                 "id": 1,
@@ -125,8 +125,8 @@
     {
         "id": 4,
 		"name": "P",
-        "meaning": "Gentle With Self",
-        "start": "Pick a simple activity that is kind to yourself. Think about yourself with pride, acceptance, and forgiveness.",
+        "meaning": "Pleasure",
+        "start": "Do something that makes you feel good.",
         "suggestions": [
             {
                 "id": 1,
@@ -166,8 +166,8 @@
     {
         "id": 5,
 		"name": "E",
-        "meaning": "Gentle With Self",
-        "start": "Pick a simple activity that is kind to yourself. Think about yourself with pride, acceptance, and forgiveness.",
+        "meaning": "Exercise",
+        "start": "Get moving to improve your mood and health.",
         "suggestions": [
             {
                 "id": 1,
@@ -207,8 +207,8 @@
     {
         "id": 6,
 		"name": "S",
-        "meaning": "Gentle With Self",
-        "start": "Pick a simple activity that is kind to yourself. Think about yourself with pride, acceptance, and forgiveness.",
+        "meaning": "Social",
+        "start": "Connect and interact with others.",
         "suggestions": [
             {
                 "id": 1,

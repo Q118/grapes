@@ -28,11 +28,12 @@ function App() {
 		const activityJSON = localStorage.getItem(LOCAL_STORAGE_KEY);
 		//check if it exists yet
     if (activityJSON != null) setActivities(JSON.parse(activityJSON));
-    console.log(sampleActivities)
+    console.log(sampleActivities[0].start)
     console.log(mappedActivities)
   }, []);
   
-  
+  //**** fix so that it is sotring it when they get altered
+  //the any f the elementsd start property
   useEffect(() => {
 		localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(activities));
 	}, [activities]);
@@ -43,7 +44,7 @@ function App() {
   });
  
   const meanings = sampleActivities.map(activity => {
-    return activity.meaning;
+    return activity.start;
   });
 
   const ActivityContextValue = {
@@ -54,7 +55,7 @@ function App() {
   return (
     <ActivityContext.Provider value={ActivityContextValue}>
     <div>
-          <p>{mappedActivities[0]}</p>
+          
           <MainContainer />
 
     </div>
