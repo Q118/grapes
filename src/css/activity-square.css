@@ -1,0 +1,7 @@
+.activity__input {
+    border-radius: 5px;
+    font-size: inherit;
+    padding: 5px 10px;
+    outline-color: violet;
+    /* width: 100%; */
+}

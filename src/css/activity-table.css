@@ -1,7 +1,11 @@
 .activity--table__container {
     margin-top: 20px;
+    display: grid;
+    place-items: center;
+    background-color: blanchedalmond;
 }
 
 .box {
     max-width: min-content;
+
 }
