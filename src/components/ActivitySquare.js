@@ -10,7 +10,7 @@ export default function ActivitySquare(props) {
 	//set up the initial state to hold name and activity
 	const { handleActivitySelect } = useContext(ActivityContext);
 
-	const { id, name, meaning, start } = useContext(ActivityContext);
+	const { id, name, meaning, start } = props;
 
 	// **To do* add in suggestions into props//
 
