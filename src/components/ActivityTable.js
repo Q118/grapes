@@ -1,51 +1,26 @@
 /** @format */
 
 import React, { useContext } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import ActivitySquare from "./ActivitySquare";
 import { ActivityContext } from "../App";
 
 // each box should have a text area to be filled
 
-export default function ActivityTable(props) {
-	const { mappedActivities, meanings } = useContext(ActivityContext);
+export default function ActivityTable({activities}) {
+	const { handleActivityAdd } = useContext(ActivityContext);
 
 	// const { id, name, meaning, start, suggestions } = props;
 
 	return (
-		<div>
-			<Container className="activity--table__container">
-				<Row>
-					<Col className="box box--g">
-						<h3>{mappedActivities[0]}</h3>
-						<ActivitySquare  />
-					</Col>
-					<Col className="box box--r">
-						<h3>{mappedActivities[1]}</h3> 
-                        <ActivitySquare />
-					</Col>
-					<Col className="box box--a">
-						<h3>{mappedActivities[2]}</h3>
-						<ActivitySquare />
-					</Col>
-				</Row>
-				<Row>
-					<Col className="box box--p">
-						<h3>{mappedActivities[3]}</h3>
-						<ActivitySquare />
-					</Col>
-					<Col className="box box--e">
-						<h3>{mappedActivities[4]}</h3>
-						<ActivitySquare />
-					</Col>
-					<Col className="box box--s">
-						<h3>{mappedActivities[5]}</h3>
-						<ActivitySquare />
-					</Col>
-				</Row>
-			</Container>
+		<div className="activity__table">
+			<div>
+				{activities.map((activity) => {
+					return <ActivitySquare key={activity.id} {...activities} />;
+				})}
+			</div>
 		</div>
 	);
 }

@@ -6,10 +6,9 @@ import { ActivityContext } from "../App";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
 
-
 export default function ActivitySquare(props) {
 	//set up the initial state to hold name and activity
-	const { handleRecipeSelect } = useContext(ActivityContext);
+	const { handleActivitySelect } = useContext(ActivityContext);
 
 	const { id, name, meaning, start } = useContext(ActivityContext);
 
@@ -24,20 +23,22 @@ export default function ActivitySquare(props) {
 				<div className="edit--button__container">
 					<button
 						className="btn btn--primary mr-1"
-						onClick={() => handleRecipeSelect(id)}>
+						onClick={() => handleActivitySelect(id)}>
 						<FontAwesomeIcon icon={faEdit} />
 					</button>
 				</div>
-    <div className="activity__meaning"><h4>{meaning}</h4></div>       
-            </div>
-            <div className="activity__row"></div>
-
-			<textarea
-				type="activity"
-				name="activity"
-				className="activity__input"
-				placeholder={meaning}
-			/>
+				<div className="activity__meaning">
+					<h4>{meaning}</h4>
+				</div>
+			</div>
+			<div className="activity__input">
+				<textarea
+					type="activity"
+					name="activity"
+					className="activity__input"
+					placeholder={start}
+				/>
+			</div>
 		</div>
 	);
 }
