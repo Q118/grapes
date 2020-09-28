@@ -32,12 +32,7 @@ export default function ActivitySquare(props) {
 				</div>
 			</div>
 			<div className="activity__input">
-				<textarea
-					type="activity"
-					name="activity"
-					className="activity__input"
-					placeholder={start}
-				/>
+				<h5>{start}</h5>
 			</div>
 		</div>
 	);
