@@ -3,5 +3,5 @@
     font-size: inherit;
     padding: 5px 10px;
     outline-color: violet;
-    /* width: 100%; */
+    min-height: 100px;
 }
