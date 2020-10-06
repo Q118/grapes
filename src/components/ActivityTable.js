@@ -2,9 +2,10 @@
 
 import React from "react";
 import activities from "../utils/sampleActivities.json";
-//import "bootstrap/dist/css/bootstrap.css";
+import EditButton from "./EditButton";
 import Container from "react-bootstrap/Container";
 import "../css/activity-table.css";
+
 class ActivityTable extends React.Component {
 	render() {
 		return (
@@ -29,6 +30,7 @@ class ActivityTable extends React.Component {
 									<strong>{activity.name}</strong>
 									<br />
 									{activity.meaning}
+									<EditButton />
 								</td>
 								<td className="activity__description">
 									{activity.start}

@@ -19,7 +19,7 @@ export default function ActivitySquare(props) {
 		<div className="activity__square">
 			<div className="activity__header">
 				<div className="activity__title">
-					<h3>{sampleActivities[0].name}</h3>
+					<h3>{name}</h3>
 				</div>
 				<div className="edit--button__container">
 					<button
