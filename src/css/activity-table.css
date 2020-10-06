@@ -1,11 +1,14 @@
-.activity--table__container {
+.activity--table {
     margin-top: 20px;
     display: grid;
     place-items: center;
-    background-color: blanchedalmond;
+    /* background-color: rgb(255, 213, 205); */
 }
 
-.box {
-    max-width: min-content;
+.activity__description {
+    width: 200px;
+    height: 100px;
+    /* word-wrap: ; */
 
 }
+
