@@ -7,8 +7,16 @@
 
 .activity__description {
     width: 200px;
-    height: 100px;
+    height: 00px;
     /* word-wrap: ; */
 
 }
 
+
+.activity__input {
+    border-radius: 5px;
+    font-size: inherit;
+    padding: 5px 10px;
+    outline-color: violet;
+    min-height: fit-content;
+}

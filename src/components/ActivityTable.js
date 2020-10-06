@@ -31,7 +31,11 @@ class ActivityTable extends React.Component {
 									{activity.meaning}
 								</td>
 								<td className="activity__description">
-									<textarea placeholder={activity.start}></textarea>
+									<textarea 
+										placeholder={activity.start}
+										className="activity__input"
+										rows="4" cols="50"
+									/>
 								</td>
 							</tr>
 						))}
