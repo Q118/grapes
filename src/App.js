@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useState, useEffect } from "react";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import sampleActivities from "./utils/sampleActivities.json";
 import ActivityTable from "./components/ActivityTable";
 // import Navbar from "./components/Navbar";
@@ -30,6 +30,7 @@ function App() {
 		const activityJSON = localStorage.getItem(LOCAL_STORAGE_KEY);
 		//check if it exists yet
 		if (activityJSON != null) setActivities(JSON.parse(activityJSON));
+		console.log(activities);
 	}, []);
 
 	//called anytime the activities are altered by user
@@ -38,7 +39,8 @@ function App() {
 	}, [activities]);
 
 	function handleActivitySelect(id) {
-		setSelectedActivityId(id);
+    setSelectedActivityId(id);
+    console.log(selectedActivity);
 	}
 
 	//function to allow us to change an activity's 'start'
@@ -61,17 +63,19 @@ function App() {
 	};
 
 	return (
-		<ActivityContext.Provider value={ActivityContextValue}>
-			<div>
-				{/* <Navbar /> */}
-				<ActivityTable activities={activities} />
-				{selectedActivity && <ActivityEdit activity={selectedActivity} />}
-				{/* This line above is saying, is there a selectedRecipe? if true then
+		<Router>
+			<ActivityContext.Provider value={ActivityContextValue}>
+				<div>
+					{/* <Navbar /> */}
+					<ActivityTable activities={activities} />
+					{selectedActivity && <ActivityEdit activity={selectedActivity} />}
+					{/* This line above is saying, is there a selectedRecipe? if true then
 							its going to evaluate the next thing after the "&&", then it will return it
 							if the selectedRecipe is undefined it like short-circuits and doesn't return the second part
 							its the same as doing a turnery and the thing after the : wud be null */}
-			</div>
-		</ActivityContext.Provider>
+				</div>
+			</ActivityContext.Provider>
+		</Router>
 	);
 }
 

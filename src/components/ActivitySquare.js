@@ -5,12 +5,13 @@ import { ActivityContext } from "../App";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
+import sampleActivities from "../utils/sampleActivities.json";
 
 export default function ActivitySquare(props) {
 	//set up the initial state to hold name and activity
 	const { handleActivitySelect } = useContext(ActivityContext);
 
-	const { id, name, meaning, start } = props;
+	const { id, name, meaning, start, activities } = props;
 
 	// **To do* add in suggestions into props//
 
@@ -18,7 +19,7 @@ export default function ActivitySquare(props) {
 		<div className="activity__square">
 			<div className="activity__header">
 				<div className="activity__title">
-					<h3>{name}</h3>
+					<h3>{sampleActivities[0].name}</h3>
 				</div>
 				<div className="edit--button__container">
 					<button

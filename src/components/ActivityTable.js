@@ -1,26 +1,51 @@
-/** @format */
+import React from "react";
+import activities from "../utils/sampleActivities.json";
+import "bootstrap/dist/css/bootstrap.css";
 
-import React, { useContext } from "react";
-// import Container from "react-bootstrap/Container";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
-import ActivitySquare from "./ActivitySquare";
-import { ActivityContext } from "../App";
 
-// each box should have a text area to be filled
+class ActivityTable extends React.Component {
 
-export default function ActivityTable({activities}) {
-	const { handleActivityAdd } = useContext(ActivityContext);
 
-	// const { id, name, meaning, start, suggestions } = props;
+	render() {
+	
+		return (
+			<div className="container mt-4">
+				<header className="headerContainer mb-2 pt-2 text-center">
+					<h1>Medicinal activitys</h1>
+				</header>
 
-	return (
-		<div className="activity__table">
-			<div>
-				{activities.map((activity) => {
-					return <ActivitySquare key={activity.id} {...activities} />;
-				})}
+				<table className="table tableContainer table-hover">
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">Meaning</th>
+							<th scope="col">Start</th>
+							{/* <th scope="col">Suggestions</th>
+							<th scope="col">Picture</th> */}
+						</tr>
+					</thead>
+					<tbody>
+						{activities.map((activity) => (
+							<tr key={activity.id}>
+								{/* <th scope="row">{activity.id}</th> */}
+								<td>
+									<strong>{activity.name}</strong>
+								</td>
+								<td>{activity.meaning}</td>
+								<td>{activity.start}</td>
+								{/* <td>
+									{" "}
+									<img alt={activity.Name} src={activity.Image} className="picture" />
+								</td> */}
+							</tr>
+						))}
+					</tbody>
+				</table>
 			</div>
-		</div>
-	);
+		);
+	}
 }
+
+export default ActivityTable;
+
+
