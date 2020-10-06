@@ -13,7 +13,8 @@ export default function EditButton({ id }) {
 		<div>
 			<button
 				className="btn btn--primary mr-1"
-				onClick={() => handleActivitySelect(id)}>
+				onClick={(id) => handleActivitySelect(id)}
+                >
 				<FontAwesomeIcon icon={faEdit} />
 			</button>
 		</div>

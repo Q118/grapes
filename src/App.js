@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import sampleActivities from "./utils/sampleActivities.json";
 import ActivityTable from "./components/ActivityTable";
@@ -10,7 +10,7 @@ import "./css/app.css";
 //import { v4 as uuidv4 } from "uuid";
 import ActivityEdit from "./components/ActivityEdit";
 
-const LOCAL_STORAGE_KEY = "reactGrapes.activities";
+// const LOCAL_STORAGE_KEY = "reactGrapes.activities";
 
 export const ActivityContext = React.createContext();
 
@@ -26,21 +26,21 @@ function App() {
 	);
 
 	//on load
-	useEffect(() => {
-		const activityJSON = localStorage.getItem(LOCAL_STORAGE_KEY);
-		//check if it exists yet
-		if (activityJSON != null) setActivities(JSON.parse(activityJSON));
-		console.log(activities);
-	}, []);
+	// useEffect(() => {
+	// 	const activityJSON = localStorage.getItem(LOCAL_STORAGE_KEY);
+	// 	//check if it exists yet
+	// 	if (activityJSON != null) setActivities(JSON.parse(activityJSON));
+	// 	console.log(activities);
+	// }, []);
 
-	//called anytime the activities are altered by user
-	useEffect(() => {
-		localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(activities));
-	}, [activities]);
+	// //called anytime the activities are altered by user
+	// useEffect(() => {
+	// 	localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(activities));
+	// }, [activities]);
 
 	function handleActivitySelect(id) {
     setSelectedActivityId(id);
-    console.log(selectedActivity);
+    console.log(id);
 	}
 
 	//function to allow us to change an activity's 'start'

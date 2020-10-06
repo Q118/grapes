@@ -7,13 +7,12 @@ import Container from "react-bootstrap/Container";
 import "../css/activity-table.css";
 
 class ActivityTable extends React.Component {
+
+  
+
 	render() {
 		return (
 			<Container>
-				{/* <header className="headerContainer mb-2 pt-2 text-center">
-					<h1>Medicinal activitys</h1>
-				</header> */}
-
 				<table className="table activity--table">
 					<thead>
 						<tr>
@@ -30,10 +29,9 @@ class ActivityTable extends React.Component {
 									<strong>{activity.name}</strong>
 									<br />
 									{activity.meaning}
-									<EditButton />
 								</td>
 								<td className="activity__description">
-									{activity.start}
+									<textarea placeholder={activity.start}></textarea>
 								</td>
 							</tr>
 						))}
