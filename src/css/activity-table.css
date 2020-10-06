@@ -5,9 +5,11 @@
     /* background-color: rgb(255, 213, 205); */
 }
 
-.activity__description {
+.activity__row {
     width: 200px;
     height: 00px;
+    border-radius: 5px;
+    border: red 4px solid;
     /* word-wrap: ; */
 
 }
@@ -18,5 +20,4 @@
     font-size: inherit;
     padding: 5px 10px;
     outline-color: violet;
-    min-height: fit-content;
 }
