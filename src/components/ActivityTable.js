@@ -2,25 +2,21 @@
 
 import React from "react";
 import activities from "../utils/sampleActivities.json";
-import moment from 'moment';
+import moment from "moment";
 import Container from "react-bootstrap/Container";
+import SuggestButton from "./SuggestButton"
 import "../css/activity-table.css";
 
 class ActivityTable extends React.Component {
-	
-	
-
 	render() {
-
-		
-
 		return (
 			<Container>
 				<table className="table activity--table">
 					<thead>
 						<tr>
-							<th scope="col">GRAPES</th>
-		<th scope="col">on date{moment('20010704T120854').format('MMMM Do YYYY')}</th>
+							<th scope="col">My GRAPES on {" "}
+							{moment().format("MMMM Do YYYY")}
+							</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -38,6 +34,9 @@ class ActivityTable extends React.Component {
 										rows="3"
 										cols="50"
 									/>
+								</td>
+								<td>
+									<SuggestButton />
 								</td>
 							</tr>
 						))}
