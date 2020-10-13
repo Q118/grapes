@@ -22,9 +22,8 @@ class ActivityTable extends React.Component {
 					<tbody>
 						{activities.map((activity) => (
 							<tr key={activity.id} className="activity__row">
-								<td>
-									<strong>{activity.name}</strong>
-									<br />
+								<td className="name-meaning">
+									<strong><h1>{activity.name}</h1></strong>
 									{activity.meaning}
 								</td>
 								<td className="activity__description">

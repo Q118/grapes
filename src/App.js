@@ -7,6 +7,7 @@ import ActivityTable from "./components/ActivityTable";
 // import Navbar from "./components/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/app.css";
+import ShareButton from "./components/shareButton";
 //import { v4 as uuidv4 } from "uuid";
 
 
@@ -68,6 +69,7 @@ function App() {
 				<div>
 					{/* <Navbar /> */}
 					<ActivityTable activities={activities} />
+					<ShareButton />
 				</div>
 			</ActivityContext.Provider>
 		</Router>

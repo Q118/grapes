@@ -3,7 +3,7 @@ import React from 'react'
 export default function SuggestButton() {
     return (
         <div>
-            <button></button>
+            <button>Suggestion</button>
         </div>
     )
 }

@@ -1,3 +1,9 @@
 @import-normalize;
 @import './activity-table.css';
 @import './activity-square.css';
+
+
+.share-button {
+    display: grid;
+    place-items: center;
+}
