@@ -9,6 +9,10 @@ tbody {
     margin-top: 30px;
 }
 
+h1 {
+    font-family: 'Aladin', cursive;
+}
+
 .activity__row {
     width: 200px;
     height: 00px;
