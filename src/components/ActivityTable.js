@@ -2,14 +2,11 @@
 
 import React from "react";
 import activities from "../utils/sampleActivities.json";
-import EditButton from "./EditButton";
+
 import Container from "react-bootstrap/Container";
 import "../css/activity-table.css";
 
 class ActivityTable extends React.Component {
-
-  
-
 	render() {
 		return (
 			<Container>
@@ -22,20 +19,20 @@ class ActivityTable extends React.Component {
 							<th scope="col">Picture</th> */}
 						</tr>
 					</thead>
-					<tbody >
+					<tbody>
 						{activities.map((activity) => (
-							<tr key={activity.id}
-							className="activity__row">
+							<tr key={activity.id} className="activity__row">
 								<td>
 									<strong>{activity.name}</strong>
 									<br />
 									{activity.meaning}
 								</td>
 								<td className="activity__description">
-									<textarea 
+									<textarea
 										placeholder={activity.start}
 										className="activity__input"
-										rows="3" cols="50"
+										rows="3"
+										cols="50"
 									/>
 								</td>
 							</tr>

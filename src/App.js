@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import sampleActivities from "./utils/sampleActivities.json";
 import ActivityTable from "./components/ActivityTable";
@@ -8,9 +8,9 @@ import ActivityTable from "./components/ActivityTable";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/app.css";
 //import { v4 as uuidv4 } from "uuid";
-import ActivityEdit from "./components/ActivityEdit";
 
-// const LOCAL_STORAGE_KEY = "reactGrapes.activities";
+
+const LOCAL_STORAGE_KEY = "reactGrapes.activities";
 
 export const ActivityContext = React.createContext();
 
@@ -26,17 +26,17 @@ function App() {
 	);
 
 	//on load
-	// useEffect(() => {
-	// 	const activityJSON = localStorage.getItem(LOCAL_STORAGE_KEY);
-	// 	//check if it exists yet
-	// 	if (activityJSON != null) setActivities(JSON.parse(activityJSON));
-	// 	console.log(activities);
-	// }, []);
+	useEffect(() => {
+		const activityJSON = localStorage.getItem(LOCAL_STORAGE_KEY);
+		//check if it exists yet
+		if (activityJSON != null) setActivities(JSON.parse(activityJSON));
+		console.log(activities);
+	}, []);
 
 	// //called anytime the activities are altered by user
-	// useEffect(() => {
-	// 	localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(activities));
-	// }, [activities]);
+	useEffect(() => {
+		localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(activities));
+	}, [activities]);
 
 	function handleActivitySelect(id) {
     setSelectedActivityId(id);
@@ -68,11 +68,6 @@ function App() {
 				<div>
 					{/* <Navbar /> */}
 					<ActivityTable activities={activities} />
-					{selectedActivity && <ActivityEdit activity={selectedActivity} />}
-					{/* This line above is saying, is there a selectedRecipe? if true then
-							its going to evaluate the next thing after the "&&", then it will return it
-							if the selectedRecipe is undefined it like short-circuits and doesn't return the second part
-							its the same as doing a turnery and the thing after the : wud be null */}
 				</div>
 			</ActivityContext.Provider>
 		</Router>
