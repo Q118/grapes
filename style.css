@@ -1,0 +1,16 @@
+body {
+    background-color: blueviolet;
+}
+
+.myJumbo {
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.paragraph {
+    max-width: max-content;
+}
+/* 
+TODO: add above to paragraph to display more narrow at center.
+*/
