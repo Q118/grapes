@@ -278,7 +278,23 @@ window.addEventListener("load", () => {
 	// TODO: add elements here as i create them
 });
 
-//* .transform translate(0px, -500px)
+
+// Functions
+
+function generateRandom() {}
+
+function generateChart() {
+    window.location = "./assets/chart.html";
+}
+
+
+
+
+function handleNext() {
+	titleContainer.innerHTML = activities[index].name;
+	subtitleContainer.innerHTML = activities[index].meaning;
+	startingContainer.innerHTML = activities[index].start;
+}
 
 //event listeners for buttons
 beginBtn.addEventListener("click", () => {
@@ -289,13 +305,6 @@ beginBtn.addEventListener("click", () => {
 	startBtn.style.backgroundColor = "red";
 	// TODO: add animation to buttons on clicks
 });
-
-// TODO create function that loads elements from the activities array to display on click of next etc
-function handleNext() {
-	titleContainer.innerHTML = activities[index].name;
-	subtitleContainer.innerHTML = activities[index].meaning;
-	startingContainer.innerHTML = activities[index].start;
-}
 
 startBtn.addEventListener("click", () => {
 	startingContainer.textContent = `How this app works`;
@@ -316,4 +325,10 @@ nextBtn.addEventListener("click", () => {
     };
 });
 
-// TODO: add animation to buttons on clicks
+finishBtn.addEventListener("click", () => {
+    generateChart();
+})
+
+
+
+
