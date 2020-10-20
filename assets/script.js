@@ -257,11 +257,17 @@ const startingContainer = document.querySelector(".startingContainer");
 const userContainer = document.querySelector(".userContainer");
 const btnContainer = document.querySelector(".btnContainer");
 
-//form input
+//elements to add
 const userInput = `
 <textarea rows="5"></textarea>
 `;
-// put
+
+// const help = `
+// <h6></h6>
+
+// `
+
+
 //buttons
 const beginBtn = document.querySelector(".beginBtn");
 const startBtn = document.querySelector(".startBtn");
