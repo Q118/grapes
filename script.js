@@ -2,6 +2,7 @@
 //containers
 const welcomeContainerOne = document.querySelector('.welcomeOne');
 const welcomeContainerTwo = document.querySelector('.welcomeTwo');
+const instructionsContainer = document.querySelector('.instructionsContainer')
 
 //buttons
 const beginBtn = document.querySelector('.beginBtn');
@@ -21,5 +22,6 @@ window.addEventListener("load",  () => {
 //event listeners for buttons
 beginBtn.addEventListener("click", () => {
     welcomeContainerTwo.style.visibility = "visible";
-    welcomeContainerOne.style.visibility = "hidden"
+    welcomeContainerOne.style.visibility = "hidden";
+    welcomeContainerTwo.style.transform = "translate(0px, -500px)"
 });
