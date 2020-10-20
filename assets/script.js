@@ -251,6 +251,8 @@ const activities = [
     
     ]
 
+let index = 0;
+
 //containers
 const welcomeContainerOne = document.querySelector('.welcomeOne');
 const formContainer = document.querySelector('.formContainer');
@@ -278,6 +280,7 @@ const finishBtn = document.querySelector('.finishBtn');
      startBtn.style.visibility = "hidden";
      nextBtn.style.visibility = "hidden";
      finishBtn.style.visibility = "hidden";
+     index = 0;
      console.log("loaded");
      // TODO: add elements here as i create them 
  });
@@ -302,15 +305,16 @@ beginBtn.addEventListener("click", () => {
 
 // TODO create function that loads elements from the activities array to display on click of next etc
 function handleNext()  {
-    for(var i = 0; i < activities.length; i++){
-        console.log(activities[i].name);
-    };
+        titleContainer.innerHTML = activities[index].name;
+        subtitleContainer.innerHTML = activities[index].meaning;
+        startingContainer.innerHTML = activities[index].start;
+
  };
 
-handleNext();
 
 
-startBtn.addEventListener("click", () => {
+
+startBtn.addEventListener('click', () => {
     startingContainer.textContent = `How this app works`;
     userContainer.innerHTML = userInput;
     startBtn.style.visibility = 'hidden';
@@ -319,6 +323,13 @@ startBtn.addEventListener("click", () => {
     subtitleContainer.textContent = activities[0].meaning;
     startingContainer.textContent = activities[0].start;
 });
+
+nextBtn.addEventListener('click', () => {
+   index++;
+    handleNext();
+});
+
+
     // TODO: add animation to buttons on clicks
 
 
