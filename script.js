@@ -48,9 +48,8 @@ beginBtn.addEventListener("click", () => {
    // TODO: add animation to buttons on clicks
 });
 
-// startBtn.addEventListener("click", () => {
-//     startingContainer.textContent = `How this app works`;
-//     userContainer.innerHTML = userInput;
-//     beginBtn.textContent = `Let's get started!`;
-//     beginBtn.style.backgroundColor = "red";
+startBtn.addEventListener("click", () => {
+    startingContainer.textContent = `How this app works`;
+    userContainer.innerHTML = userInput;
+});
 //     // TODO: add animation to buttons on clicks
