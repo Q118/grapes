@@ -5,7 +5,7 @@ body {
 .myJumbo {
     margin-left: 100px;
     margin-right: 100px;
-
+    margin-top: 40px;
 }
 
 .paragraph {
@@ -14,3 +14,11 @@ body {
 /* 
 TODO: add above to paragraph to display more narrow at center.
 */
+
+.myNav {
+    background-color: burlywood;
+}
+
+.rightSide {
+    justify-content: end;
+}
