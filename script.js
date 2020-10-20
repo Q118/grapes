@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // variables
 //containers
@@ -9,6 +9,7 @@ const titleContainer = document.querySelector('.titleContainer');
 const subtitleContainer = document.querySelector('.subtitleContainer');
 const startingContainer = document.querySelector('.startingContainer');
 const userContainer = document.querySelector('.userContainer');
+const btnContainer = document.querySelector('.btnContainer');
 
 //form input
 const userInput = `
@@ -18,12 +19,18 @@ const userInput = `
 //buttons
 const beginBtn = document.querySelector('.beginBtn');
 const startBtn = document.querySelector('.startBtn');
+// const startBtn = `
+// <a class="btn btn-primary btn-lg beginBtn" href="#" role="button"
+// >Let's get started!</a
+// >
+// `
 
 //elements to be hidden on page load 
  window.addEventListener("load",  () => {
-     formContainer.style.visibility = "hidden";
+     startBtn.style.visibility = "hidden";
+     console.log("loaded");
      // TODO: add elements here as i create them 
-// });
+ });
 
 
 
@@ -34,8 +41,10 @@ const startBtn = document.querySelector('.startBtn');
 beginBtn.addEventListener("click", () => {
    startingContainer.textContent = `How this app works`;
    userContainer.textContent = `it works like um dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsu`;
-   beginBtn.textContent = `Let's get started!`;
-   beginBtn.style.backgroundColor = "red";
+   beginBtn.style.visibility = 'hidden';
+   startBtn.style.visibility = 'visible';
+   // beginBtn.textContent = `Let's get started!`;
+   startBtn.style.backgroundColor = "red";
    // TODO: add animation to buttons on clicks
 });
 
@@ -45,4 +54,3 @@ beginBtn.addEventListener("click", () => {
 //     beginBtn.textContent = `Let's get started!`;
 //     beginBtn.style.backgroundColor = "red";
 //     // TODO: add animation to buttons on clicks
-//  
