@@ -9,7 +9,7 @@ body {
 }
 
 .paragraph {
-    max-width: max-content;
+    max-width: 100%;
 }
 /* 
 TODO: add above to paragraph to display more narrow at center.
@@ -19,3 +19,7 @@ TODO: add above to paragraph to display more narrow at center.
     background-color: burlywood;
 }
 
+textarea {
+	box-sizing: border-box;
+	width: 100%;
+}
