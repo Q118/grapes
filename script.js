@@ -19,15 +19,15 @@ const userInput = `
 //buttons
 const beginBtn = document.querySelector('.beginBtn');
 const startBtn = document.querySelector('.startBtn');
-// const startBtn = `
-// <a class="btn btn-primary btn-lg beginBtn" href="#" role="button"
-// >Let's get started!</a
-// >
-// `
+const nextBtn = document.querySelector('.nextBtn');
+const finishBtn = document.querySelector('.finishBtn');
+
 
 //elements to be hidden on page load 
  window.addEventListener("load",  () => {
      startBtn.style.visibility = "hidden";
+     nextBtn.style.visibility = "hidden";
+     finishBtn.style.visibility = "hidden";
      console.log("loaded");
      // TODO: add elements here as i create them 
  });
@@ -51,5 +51,6 @@ beginBtn.addEventListener("click", () => {
 startBtn.addEventListener("click", () => {
     startingContainer.textContent = `How this app works`;
     userContainer.innerHTML = userInput;
+    startBtn.style.visibility = 'hidden';
 });
 //     // TODO: add animation to buttons on clicks
