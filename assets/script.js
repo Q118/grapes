@@ -257,6 +257,8 @@ const startingContainer = document.querySelector(".startingContainer");
 const userContainer = document.querySelector(".userContainer");
 const btnContainer = document.querySelector(".btnContainer");
 
+const hintContainer = document.querySelector(".hintContainer");
+
 //elements to add
 const userInput = `
 <textarea rows="5"></textarea>
@@ -279,9 +281,11 @@ window.addEventListener("load", () => {
 	startBtn.style.visibility = "hidden";
 	nextBtn.style.visibility = "hidden";
 	finishBtn.style.visibility = "hidden";
+	hintContainer.style.visibility = "hidden";
 	index = 0;
 	console.log("loaded");
 	// TODO: add elements here as i create them
+
 });
 
 
@@ -317,6 +321,7 @@ startBtn.addEventListener("click", () => {
 	userContainer.innerHTML = userInput;
 	startBtn.style.visibility = "hidden";
 	nextBtn.style.visibility = "visible";
+	hintContainer.style.visibility = "visible";
 	titleContainer.textContent = activities[0].name;
 	subtitleContainer.textContent = activities[0].meaning;
 	startingContainer.textContent = activities[0].start;
