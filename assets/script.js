@@ -261,7 +261,7 @@ const hintContainer = document.querySelector(".hintContainer");
 
 //elements to add
 const userInput = `
-<textarea rows="5"></textarea>
+<textarea id= "user" rows="5"></textarea>
 `;
 
 // const help = `
@@ -291,6 +291,8 @@ window.addEventListener("load", () => {
 
 function generateRandom() {
 	//make one the of the jso suggestions appear inside the textarea
+	console.log("yo");
+	document.getElementById("user").value = "hello";
 }
 
 function generateChart() {
@@ -298,6 +300,7 @@ function generateChart() {
 }
 
 function handleNext() {
+	// TODO: save the user input to storage and then clear the text area
 	titleContainer.innerHTML = activities[index].name;
 	subtitleContainer.innerHTML = activities[index].meaning;
 	startingContainer.innerHTML = activities[index].start;
@@ -338,6 +341,6 @@ finishBtn.addEventListener("click", () => {
 	generateChart();
 });
 
-finishBtn.addEventListener("click", () => {
+randoBtn.addEventListener("click", () => {
 	generateRandom();
 });
