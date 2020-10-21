@@ -278,6 +278,7 @@ const randoBtn = document.querySelector(".randoBtn");
 
 //elements to be hidden on page load
 window.addEventListener("load", () => {
+	localStorage.clear();
 	startBtn.style.visibility = "hidden";
 	nextBtn.style.visibility = "hidden";
 	finishBtn.style.visibility = "hidden";
