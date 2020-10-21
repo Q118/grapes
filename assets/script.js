@@ -349,6 +349,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 finishBtn.addEventListener("click", () => {
+	index++;
 	saveInput();
 	generateChart();
 });
