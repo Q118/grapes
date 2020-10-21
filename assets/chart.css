@@ -1,3 +1,12 @@
 .chartContainer {
     border: solid black 3px;
 }
+
+.chartRow {
+    border: solid black 1px;
+}
+
+.letterCol {
+    max-width: max-content;
+    border: solid black 1px;
+}
