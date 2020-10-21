@@ -297,8 +297,17 @@ function generateChart() {
 	window.location = "./assets/chart.html";
 }
 
+
+// You can retrieve the value by calling getItem:
+// var storedValue = localStorage.getItem("server");
+function saveInput() {
+	// TODO: save the user input to storage 
+	var input = document.getElementById("user").value;
+	console.log(input);
+	localStorage.setItem(index, input);
+}
+
 function handleNext() {
-	// TODO: save the user input to storage and then clear the text area
 	titleContainer.innerHTML = activities[index].name;
 	subtitleContainer.innerHTML = activities[index].meaning;
 	startingContainer.innerHTML = activities[index].start;
@@ -326,17 +335,21 @@ startBtn.addEventListener("click", () => {
 	startingContainer.textContent = activities[0].start;
 });
 
+// TODO: insert ability to still store the S on the last click
+
 nextBtn.addEventListener("click", () => {
-	document.getElementById("user").value = "";
 	index++;
 	handleNext();
 	if (index === 5) {
 		nextBtn.style.visibility = "hidden";
 		finishBtn.style.visibility = "visible";
 	}
+	saveInput();
+	document.getElementById("user").value = "";
 });
 
 finishBtn.addEventListener("click", () => {
+	saveInput();
 	generateChart();
 });
 
