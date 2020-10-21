@@ -289,10 +289,17 @@ window.addEventListener("load", () => {
 
 // Functions
 
+
+//var item = items[];
+
 function generateRandom() {
 	//make one the of the jso suggestions appear inside the textarea
-	console.log("yo");
-	document.getElementById("user").value = "hello";
+	//grab the one with [index]  and pick random of suggestion
+	console.log("yo rando");
+	
+	var rando = activities[index].suggestions[Math.floor(Math.random() * 8)]
+	console.log(rando.name);
+	document.getElementById("user").value = rando.name;
 }
 
 function generateChart() {
