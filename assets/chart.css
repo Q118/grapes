@@ -7,6 +7,9 @@
 }
 
 .letterCol {
-    max-width: max-content;
-    border: solid black 1px;
+    /* max-width: max-content; */
+}
+
+h4 {
+    font-style: italic;
 }

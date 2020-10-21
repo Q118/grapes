@@ -336,8 +336,6 @@ startBtn.addEventListener("click", () => {
 	startingContainer.textContent = activities[0].start;
 });
 
-// TODO: insert ability to still store the S on the last click
-
 nextBtn.addEventListener("click", () => {
 	index++;
 	handleNext();
