@@ -288,17 +288,8 @@ window.addEventListener("load", () => {
 });
 
 // Functions
-
-
-//var item = items[];
-
 function generateRandom() {
-	//make one the of the jso suggestions appear inside the textarea
-	//grab the one with [index]  and pick random of suggestion
-	console.log("yo rando");
-	
 	var rando = activities[index].suggestions[Math.floor(Math.random() * 8)]
-	console.log(rando.name);
 	document.getElementById("user").value = rando.name;
 }
 
@@ -336,6 +327,7 @@ startBtn.addEventListener("click", () => {
 });
 
 nextBtn.addEventListener("click", () => {
+	document.getElementById("user").value = "";
 	index++;
 	handleNext();
 	if (index === 5) {
