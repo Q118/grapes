@@ -269,12 +269,12 @@ const userInput = `
 
 // `
 
-
 //buttons
 const beginBtn = document.querySelector(".beginBtn");
 const startBtn = document.querySelector(".startBtn");
 const nextBtn = document.querySelector(".nextBtn");
 const finishBtn = document.querySelector(".finishBtn");
+const randoBtn = document.querySelector(".randoBtn");
 
 //elements to be hidden on page load
 window.addEventListener("load", () => {
@@ -285,27 +285,25 @@ window.addEventListener("load", () => {
 	index = 0;
 	console.log("loaded");
 	// TODO: add elements here as i create them
-
 });
-
 
 // Functions
 
-function generateRandom() {}
-
-function generateChart() {
-    window.location = "./assets/chart.html";
+function generateRandom() {
+	//make one the of the jso suggestions appear inside the textarea
 }
 
-
-
+function generateChart() {
+	window.location = "./assets/chart.html";
+}
 
 function handleNext() {
 	titleContainer.innerHTML = activities[index].name;
 	subtitleContainer.innerHTML = activities[index].meaning;
 	startingContainer.innerHTML = activities[index].start;
-}
+};
 
+//////////
 //event listeners for buttons
 beginBtn.addEventListener("click", () => {
 	startingContainer.textContent = `How this app works`;
@@ -329,17 +327,17 @@ startBtn.addEventListener("click", () => {
 
 nextBtn.addEventListener("click", () => {
 	index++;
-    handleNext();
-    if(index === 5) {
-        nextBtn.style.visibility = "hidden";
-        finishBtn.style.visibility = "visible";
-    };
+	handleNext();
+	if (index === 5) {
+		nextBtn.style.visibility = "hidden";
+		finishBtn.style.visibility = "visible";
+	}
 });
 
 finishBtn.addEventListener("click", () => {
-    generateChart();
-})
+	generateChart();
+});
 
-
-
-
+finishBtn.addEventListener("click", () => {
+	generateRandom();
+});
