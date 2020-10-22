@@ -2,15 +2,24 @@
     border: solid black 3px;
     margin-left: auto;
     margin-right: auto;
+    max-width: fit-content;
 }
 
 .chartRow {
     border: solid black 1px;
 }
 
-.letterCol {
-    /* max-width: max-content; */
+/* .letterCol {
+    max-width: fit-content; 
 }
+.inputCol {
+    max-width: fit-content; 
+}
+
+.piCol {
+    max-width: fit-content;
+} */
+
 
 h4 {
     font-style: italic;
@@ -35,7 +44,7 @@ h4 {
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
-
+    margin-bottom: 100px;
 }
 
 .home {
@@ -52,9 +61,6 @@ h4 {
     height: 150px
 }
 
-.piCol {
-    max-width: fit-content;
-}
 
 .gIcon {
     filter: invert(100%);
