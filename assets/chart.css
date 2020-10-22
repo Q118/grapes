@@ -1,45 +1,40 @@
 .chartContainer {
-    border: solid black 3px;
+    border: solid #7e2119 3px;
     margin-left: auto;
     margin-right: auto;
     max-width: fit-content;
+    background-color: white;
+    color: #7e2119
 }
 
 .chartRow {
-    border: solid black 1px;
+    border: solid #7e2119 1px;
 }
 
-
-
-/* .letterCol {
-    max-width: fit-content; 
+body {
+    background-image: url('./images/bg.jpg');
 }
-.inputCol {
-    max-width: fit-content; 
+.myNav {
+    background-image: url('./images/bgInvert.jpeg');
+    color: white;
 }
-
-.piCol {
-    max-width: fit-content;
-} */
 
 
 h4 {
     font-style: italic;
 }
 
-.myNav {
-    background-image: url('./images/bgInvert.jpeg');
-    color: white;
-}
+
 
 .printBtn {
     width: 150px;
     height: 150 px;
-    background-color: chartreuse;
+    background-color: #8eb540;
     border-radius: 4px;
     padding: 10px;
     /* filter: drop-shadow(0 -6mm 4mm ; */
     filter: drop-shadow(0 0 0.75rem rgb(160, 0, 210));
+    border: 4px black solid;
 }
 
 #share-buttons {
@@ -51,12 +46,13 @@ h4 {
 }
 
 .home {
-    background-color: cornflowerblue;
+    background-color: #deabd0;
     border-radius: 4px;
     filter: drop-shadow(0 0 0.75rem crimson);
     width: 150px;
     height: 150 px;
     padding: 10px;
+    border: 4px black solid;    
 }
 
 .icon {
@@ -76,3 +72,11 @@ h4 {
     font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
     
   }
+
+.myBtn:hover {background-color: #3e8e41}
+
+.myBtn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
