@@ -356,3 +356,7 @@ finishBtn.addEventListener("click", () => {
 randoBtn.addEventListener("click", () => {
 	generateRandom();
 });
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
