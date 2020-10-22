@@ -74,10 +74,36 @@ textarea {
     color: black;
 }
 
+.randoBtn {
+    background-color: rgb(155, 10, 212);
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    border: solid grey 2px;
+}
+
 .btn:hover {background-color: #3e8e41}
 
 .btn:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.randoBtn:hover {background-color: #3e8e41}
+
+.randoBtn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+i {
+    font-size: 4vw;
+    color: white;
+}
+
+.contact {
+    border: white 2px solid;
 }
