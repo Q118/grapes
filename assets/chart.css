@@ -17,3 +17,13 @@ h4 {
 .myNav {
     background-color: burlywood;
 }
+
+.printBtn {
+    width: 150px;
+    height: 150 px;
+}
+
+#share-buttons {
+    display: grid;
+    place-items: center;
+}
