@@ -40,6 +40,7 @@ function printPageArea(){
     WinPrint.document.write(printContent.innerHTML);
     WinPrint.document.write('<link rel="stylesheet" href="./chart.css" type="text/css" />');
     WinPrint.document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />');
+   // WinPrint.document.write('<link rel="stylesheet" href="./style.css" type="text/css" />');
     WinPrint.document.close();
     WinPrint.focus();
     WinPrint.print();

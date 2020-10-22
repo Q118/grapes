@@ -21,9 +21,18 @@ h4 {
 .printBtn {
     width: 150px;
     height: 150 px;
+    background-color: chartreuse;
+    border-radius: 4px;
+    padding: 10px;
 }
 
 #share-buttons {
     display: grid;
     place-items: center;
 }
+
+.home {
+    background-color: cornflowerblue;
+    border-radius: 4px;
+}
+
