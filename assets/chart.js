@@ -36,9 +36,10 @@ window.addEventListener("load", () => {
 
 function printPageArea(){
     var printContent = document.getElementById('printBox');
-    var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
+    var WinPrint = window.open('', '', 'toolbar=0,scrollbars=0,status=0');
     WinPrint.document.write(printContent.innerHTML);
-    WinPrint.document.write('<link rel="stylesheet" href="./chart.css" type="text/css" />')
+    WinPrint.document.write('<link rel="stylesheet" href="./chart.css" type="text/css" />');
+    WinPrint.document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />');
     WinPrint.document.close();
     WinPrint.focus();
     WinPrint.print();
