@@ -3,17 +3,15 @@ body {
 }
 
 .myJumbo {
-    /* margin-left: 100px;
-    margin-right: 100px; */
+    color: #7e2119;
     margin-top: 40px;
+    border: solid #7e2119 3px;
 }
 
 .paragraph {
     max-width: 100%;
 }
-/* 
-TODO: add above to paragraph to display more narrow at center.
-*/
+
 
 body {
     background-image: url('./images/bg.jpg');
@@ -33,3 +31,53 @@ textarea {
     font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
     
   }
+
+/* buttons */
+.beginBtn {
+    background-color: #deabd0;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 0.75rem rgb(155, 10, 212));
+    width: 150px;
+    height: 150 px;
+    padding: 10px;
+    border: 4px black solid;
+    color: black;    
+}
+.startBtn {
+    width: 150px;
+    height: 150 px;
+    background-color: #8eb540;
+    border-radius: 4px;
+    padding: 10px;
+    filter: drop-shadow(0 0 0.75rem rgb(155, 10, 212));
+    border: 4px black solid;
+    color: black;
+}
+.nextBtn {
+    background-color: #deabd0;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 0.75rem rgb(155, 10, 212));
+    width: 150px;
+    height: 150 px;
+    padding: 10px;
+    border: 4px black solid;
+    color: black;    
+}
+.finishBtn {
+    width: 150px;
+    height: 150 px;
+    background-color: #8eb540;
+    border-radius: 4px;
+    padding: 10px;
+    filter: drop-shadow(0 0 0.75rem rgb(155, 10, 212));
+    border: 4px black solid;
+    color: black;
+}
+
+.btn:hover {background-color: #3e8e41}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

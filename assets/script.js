@@ -321,7 +321,6 @@ beginBtn.addEventListener("click", () => {
 	userContainer.textContent = `it works like um dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsu`;
 	beginBtn.style.visibility = "hidden";
 	startBtn.style.visibility = "visible";
-	startBtn.style.backgroundColor = "red";
 	// TODO: add animation to buttons on clicks
 });
 
@@ -330,6 +329,7 @@ startBtn.addEventListener("click", () => {
 	userContainer.innerHTML = userInput;
 	startBtn.style.visibility = "hidden";
 	nextBtn.style.visibility = "visible";
+	startBtn.style.backgroundColor = "#deabd0";
 	hintContainer.style.visibility = "visible";
 	titleContainer.textContent = activities[0].name;
 	subtitleContainer.textContent = activities[0].meaning;

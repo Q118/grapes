@@ -32,7 +32,6 @@ h4 {
     background-color: #8eb540;
     border-radius: 4px;
     padding: 10px;
-    /* filter: drop-shadow(0 -6mm 4mm ; */
     filter: drop-shadow(0 0 0.75rem rgb(160, 0, 210));
     border: 4px black solid;
 }
