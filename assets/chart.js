@@ -12,6 +12,8 @@ const userS = document.querySelector(".userS");
 const newDate  = new Date();
 const today = (newDate.getMonth()+1)+'-'+newDate.getDate()+'-'+newDate.getFullYear();
 
+const printBtn = document.querySelector(".printBtn");
+
 //! get proper input from   storage
 const storedG = localStorage.getItem(1);
 const storedR = localStorage.getItem(2);
@@ -28,6 +30,23 @@ window.addEventListener("load", () => {
     userP.textContent = storedP;
     userE.textContent = storedE;
     userS.textContent = storedS;
+    console.log("loaded");
 });
 
 
+function printPageArea(){
+    var printContent = document.getElementById('printBox');
+    var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
+    WinPrint.document.write(printContent.innerHTML);
+    WinPrint.document.write('<link rel="stylesheet" href="./chart.css" type="text/css" />')
+    WinPrint.document.close();
+    WinPrint.focus();
+    WinPrint.print();
+    //WinPrint.close();
+    console.log("print");
+}
+
+printBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    printPageArea();
+});
