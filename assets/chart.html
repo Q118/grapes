@@ -18,7 +18,6 @@
 		<title>Document</title>
 	</head>
 	<body>
-
 		<nav class="navbar navbar-expand-lg navbar-light mb-5 myNav">
 			<!--margin below navbar-->
 			<a class="navbar-brand" href="#"></a>
@@ -59,7 +58,7 @@
 			</div>
 		</nav>
 
-		<div class="container chartContainer mt-5" id = "printBox">
+		<div class="container chartContainer mt-5" id="printBox">
 			<div class="row">
 				<div class="col-sm text-center">
 					<h3>My Grapes on</h3>
@@ -131,22 +130,27 @@
 		<div id="share-buttons">
 			<!-- Print -->
 			<a href="javascript:void(0);">
-				<img
-					src="./images/share.png"
-					alt="Print"
-					class = "printBtn mt-4"
-				/>
+				<img 
+				src="./images/share.png" 
+				alt="Print" 
+				class="printBtn mt-4" 
+				data-toggle="tooltip" 
+				data-placement="right" 
+				title="Tooltip on right"
+			/>
 			</a>
 			<!-- back to home screen -->
 
-			<a href="../index.html" class="home m-2">
-				<button type="button" class="btn btn-lg">
-					Make a new one
-				</button>
+			<a href="../index.html">
+				<img src="./images/grape-icon.png" 
+					alt="grape-icon" 
+					class="home mt-4" 
+					data-toggle="tooltip" 
+					data-placement="left" 
+					title="Tooltip on left"
+				/>
 			</a>
 		</div>
-
-
 
 		<!-- JS -->
 		<script

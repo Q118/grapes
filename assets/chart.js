@@ -33,7 +33,7 @@ window.addEventListener("load", () => {
     console.log("loaded");
 });
 
-
+//function to print/share just the chart section of the page
 function printPageArea(){
     var printContent = document.getElementById('printBox');
     var WinPrint = window.open('', '', 'toolbar=0,scrollbars=0,status=0');
@@ -47,6 +47,10 @@ function printPageArea(){
     //WinPrint.close();
     console.log("print");
 }
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 
 printBtn.addEventListener("click", (e) => {
     e.preventDefault();
