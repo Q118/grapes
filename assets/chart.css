@@ -9,6 +9,8 @@
     border: solid black 1px;
 }
 
+
+
 /* .letterCol {
     max-width: fit-content; 
 }
@@ -26,7 +28,8 @@ h4 {
 }
 
 .myNav {
-    background-color: burlywood;
+    background-image: url('./images/bgInvert.jpeg');
+    color: white;
 }
 
 .printBtn {
@@ -65,3 +68,11 @@ h4 {
 .gIcon {
     filter: invert(100%);
 }
+
+
+  .myTitle {
+    font-size: 9vw;
+    font-weight: bold;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    
+  }
