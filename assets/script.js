@@ -264,11 +264,6 @@ const userInput = `
 <textarea id= "user" rows="5"></textarea>
 `;
 
-// const help = `
-// <h6></h6>
-
-// `
-
 //buttons
 const beginBtn = document.querySelector(".beginBtn");
 const startBtn = document.querySelector(".startBtn");
@@ -290,7 +285,7 @@ window.addEventListener("load", () => {
 
 // Functions
 function generateRandom() {
-	var rando = activities[index].suggestions[Math.floor(Math.random() * 8)]
+	var rando = activities[index].suggestions[Math.floor(Math.random() * 8)];
 	document.getElementById("user").value = rando.name;
 }
 
@@ -298,11 +293,10 @@ function generateChart() {
 	window.location = "./assets/chart.html";
 }
 
-
 // You can retrieve the value by calling getItem:
 // var storedValue = localStorage.getItem("server");
 function saveInput() {
-	// TODO: save the user input to storage 
+	// TODO: save the user input to storage
 	var input = document.getElementById("user").value;
 	console.log(input);
 	localStorage.setItem(index, input);
@@ -312,13 +306,18 @@ function handleNext() {
 	titleContainer.innerHTML = activities[index].name;
 	subtitleContainer.innerHTML = activities[index].meaning;
 	startingContainer.innerHTML = activities[index].start;
-};
+}
 
 //////////
 //event listeners for buttons
 beginBtn.addEventListener("click", () => {
 	startingContainer.textContent = `How this app works`;
-	userContainer.textContent = `it works like um dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsu`;
+	userContainer.innerHTML =
+		`Click the start button below to begin. You will be prompted to fill in one activity for each letter. \
+		If you are not sure what to write for any of them; click the *generate-random* button below and we will 
+		generate a random suggestion for you. Feel free to modify this suggestion or leave as is. After you finish the last letter, 
+		a *finish* button will appear; click it. This will bring you to a page to display the chart that you created. 
+		There will be buttons at the bottom to either share or save a pdf file of your chart, or return to the beginning and make a new one. `;
 	beginBtn.style.visibility = "hidden";
 	startBtn.style.visibility = "visible";
 	// TODO: add animation to buttons on clicks
@@ -358,5 +357,5 @@ randoBtn.addEventListener("click", () => {
 });
 
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
+	$('[data-toggle="tooltip"]').tooltip();
+});
