@@ -89,3 +89,6 @@ i {
     border: white 2px solid;
     padding: 10px;
 }
+
+.row {background-color: white;}
+.col {background-color: white;}
