@@ -9,14 +9,14 @@ A way for users to create daily plans for their health and  self-care.
 
 ### Instructions
 
-        - Click the start button to begin. 
-        - You will be prompted to fill in one activity for each letter. 
-		- If you are not sure what to write for any of them; click the *generate-random* button and we will 
-		generate a random suggestion for you. 
-        - Feel free to modify this suggestion or leave as is. 
-        - After you finish the last letter, a *finish* button will appear; click it. 
-        - This will bring you to a page to display the chart that you created. 
-		- There will be buttons at the bottom to either share or save a pdf file of your chart, or return to the beginning and make a new one.
+* Click the start button to begin. 
+* You will be prompted to fill in one activity for each letter. 
+* If you are not sure what to write for any of them; click the *generate-random* button and we will 
+generate a random suggestion for you. 
+* Feel free to modify this suggestion or leave as is. 
+* After you finish the last letter, a *finish* button will appear; click it. 
+* This will bring you to a page to display the chart that you created. 
+* There will be buttons at the bottom to either share or save a pdf file of your chart, or return to the beginning and make a new one.
 
 
 [View more about GRAPES and CBT](https://www.cogtoolz.com/pages/grapes-tool)
