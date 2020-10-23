@@ -1,9 +1,8 @@
 # G.R.A.P.E.S 
 
-A way for users to create daily plans for their health and to practice self-care.
+![](https://github.com/Q118/grapes/blob/master/assets/images/demo.gif)
 
-
-
+A way for users to create daily plans for their health and  self-care.
 
 
 [Try Grapes Now!](https://q118.github.io/grapes/)
